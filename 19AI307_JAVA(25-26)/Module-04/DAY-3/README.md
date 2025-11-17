@@ -93,5 +93,5 @@ class Library {
 <img width="1065" height="589" alt="image" src="https://github.com/user-attachments/assets/d87a464b-6f1a-4759-a6f7-e74206df169a" />
 
 ## RESULT:
-The program successfully demonstrates **composition** by creating a `Library` object that holds multiple `Book` objects.  
-It reads book details from the user, stores them inside the library, and displays all the books in a structured format.
+The program successfully demonstrates **composition** by creating a `Library` object that holds multiple `Book` objects. It reads book details from the user, stores them inside the library, and displays all the books in a structured format.
+
