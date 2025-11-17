@@ -161,8 +161,7 @@ public class SchoolSystemMVC {
 ```
 
 ## OUTPUT:
-![Uploading image.png…]()
+<img width="894" height="808" alt="image" src="https://github.com/user-attachments/assets/3a7fc0f2-8db2-471f-a7c7-94cbc84128cd" />
 
 ## RESULT:
 The program successfully demonstrates the **MVC + DAO architecture** for managing student data. It stores multiple student records, retrieves a student based on roll number, and displays the result through the view component.
-
