@@ -165,3 +165,4 @@ public class SchoolSystemMVC {
 
 ## RESULT:
 The program successfully demonstrates the **MVC + DAO architecture** for managing student data. It stores multiple student records, retrieves a student based on roll number, and displays the result through the view component.
+
