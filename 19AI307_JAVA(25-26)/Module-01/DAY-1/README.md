@@ -56,7 +56,7 @@ Developed by: DHARSHINI K
 Register Number: 212223230047
 ```
 
-## Source code.java:
+## SOURCE CODE:
 ```
 import java.util.*;
 public class Sample
@@ -81,4 +81,5 @@ public class Sample
 
 ## RESULT:
 The program successfully reads two integers and displays the results of all relational operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) correctly based on the given inputs.
+
 
