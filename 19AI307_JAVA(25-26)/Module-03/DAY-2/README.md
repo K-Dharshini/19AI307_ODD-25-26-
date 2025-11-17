@@ -1,4 +1,4 @@
-# Ex.No:3(b) POLYMORPHISM
+# Ex.No:3(B) POLYMORPHISM
 
 ## QUESTION:
 Write a Java program using method overloading to print student details. Create a class Student with:
@@ -74,3 +74,4 @@ public class Student {
 
 ## RESULT:
 The program successfully demonstrates method overloading by printing student details using three different method signatures based on the number of arguments passed.
+
