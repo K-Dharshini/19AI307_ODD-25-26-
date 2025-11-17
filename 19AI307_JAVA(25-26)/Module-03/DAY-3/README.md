@@ -8,12 +8,12 @@ ArcadeGame: score = baseScore + (level × 100)
 
 PuzzleGame: score = (attempts ≤ 3) ? 1000 - (attempts × 100) : 500
 
-Input Format:
+## Input Format:
 
 First line: 1 or 2  
 Second line: base, level (or attempts)
 
-Output Format:
+## Output Format:
 
 Final score (int)
 
@@ -112,3 +112,4 @@ public class Main {
 
 ## RESULT:
 The program successfully calculates and displays the final score based on game type and user input using abstract methods and dynamic method dispatch.
+
