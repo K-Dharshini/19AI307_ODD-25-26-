@@ -1,70 +1,54 @@
 # Ex.No:5(A) INPUT STREAM READER 
 
 ## QUESTION:
-Write a Java program to create a new file and write user-provided content into it.
+Write a program to demonstrate chaining of streams (BufferedReader on top of InputStreamReader on top of System.in)
 
 ## AIM:
-
+To demonstrate stream chaining in Java by combining `InputStreamReader` and `BufferedReader` to read user input efficiently from `System.in`.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	
-
-
-
-
+1. Create a `BufferedReader` object by chaining `System.in → InputStreamReader → BufferedReader`.
+2. Read a line of text from the user and store it as the name.
+3. Read the next line, convert it into an integer, and store it as the age.
+4. Display the collected user details (name and age) on the screen.
+5. Use a try–with–resources block to automatically close the reader and catch any `IOException`.
 
 ## PROGRAM:
  ```
-Program to implement InputStreamReader using Java
+Program to implement Input Stream Reader using Java
 Developed by: DHARSHINI K
 Register Number: 212223230047
 ```
 
 ## SOURCE CODE:
 ```
-import java.io.File;
-import java.io.FileWriter;
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
 
-public class CreateAndWriteFile {
+public class ChainingStreamsExample {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String fileName = scanner.nextLine();
-
-        try {
-            File file = new File(fileName);
+        // Chaining: System.in -> InputStreamReader -> BufferedReader
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             
-            if (file.createNewFile()) {
-                System.out.println("File created: " + file.getName());
+            String name = br.readLine();   // reading input using BufferedReader
 
-                String content = scanner.nextLine();
+            String ageStr = br.readLine(); // reading another line
+            int age = Integer.parseInt(ageStr);
 
-                FileWriter writer = new FileWriter(file);
-                writer.write(content);
-                writer.close();
-
-                System.out.println("Content written to the file successfully.");
-            } else {
-                System.out.println("File already exists.");
-            }
+            System.out.println("--- User Details ---");
+            System.out.println("Name: " + name);
+            System.out.println("Age: " + age);
 
         } catch (IOException e) {
-            System.out.println("An error occurred: " + e.getMessage());
+            System.out.println("An error occurred while reading input: " + e.getMessage());
         }
-
-        scanner.close();
     }
 }
 ```
 
 ## OUTPUT:
-
-
+<img width="649" height="468" alt="image" src="https://github.com/user-attachments/assets/b031453c-3822-49d0-8025-9f0195693c40" />
 
 ## RESULT:
-
-
+The program successfully reads multiple lines of user input using chained input streams and prints the user details. It demonstrates effective use of `BufferedReader` wrapped around `InputStreamReader` for fast and efficient input handling.
