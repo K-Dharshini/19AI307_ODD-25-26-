@@ -17,11 +17,9 @@ Write a Java program to create a new file and write user-provided content into i
 
 ## PROGRAM:
  ```
-/*
-Program to implement a InputStreamReader using Java
-Developed by: 
-RegisterNumber:  
-*/
+Program to implement InputStreamReader using Java
+Developed by: DHARSHINI K
+Register Number: 212223230047
 ```
 
 ## SOURCE CODE:
@@ -68,4 +66,5 @@ public class CreateAndWriteFile {
 
 
 ## RESULT:
+
 
